@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private bool _isFacingRight = true;
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         rigidbody2D.velocity = new Vector2(_horizontal * speed, rigidbody2D.velocity.y);
 
